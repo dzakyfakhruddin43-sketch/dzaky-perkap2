@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circus Linktree</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* 🎪 BACKGROUND TENDA */
+body {
+    min-height: 100vh;
+    background: repeating-linear-gradient(
+        90deg,
+        #e63946,
+        #e63946 60px,
+        #ffffff 60px,
+        #ffffff 120px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 💡 LAMPU */
+.lights {
+    position: fixed;
+    top: 10px;
+    display: flex;
+    gap: 15px;
+    z-index: 5;
+}
+
+.lights span {
+    width: 14px;
+    height: 14px;
+    background: #ffbe0b;
+    border-radius: 50%;
+    animation: blink 1.5s infinite alternate;
+}
+
+.lights span:nth-child(even) {
+    animation-delay: .7s;
+}
+
+@keyframes blink {
+    from { opacity: 0.3; }
+    to { opacity: 1; box-shadow: 0 0 12px #ffbe0b; }
+}
+
+/* 🎠 CARD */
+.container {
+    background: #fff8e7;
+    max-width: 420px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 30px;
+    border: 6px solid #1d3557;
+    box-shadow: 0 25px 40px rgba(0,0,0,.3);
+    text-align: center;
+    animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* 🤡 PROFILE */
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px dashed #e63946;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.profile h1 {
+    color: #e63946;
+    font-size: 28px;
+}
+
+.profile p {
+    color: #1d3557;
+    margin-bottom: 25px;
+}
+
+/* 🎟️ BUTTONS */
+.links a {
+    display: block;
+    margin: 15px 0;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 16px;
+    border: 3px solid #1d3557;
+    background: linear-gradient(45deg, #ffbe0b, #e63946);
+    transition: all .3s ease;
+}
+
+.links a:hover {
+    transform: rotate(-2deg) scale(1.1);
+    box-shadow: 0 12px 20px rgba(0,0,0,.25);
+}
+
+/* 🎪 FOOTER */
+.footer {
+    margin-top: 22px;
+    font-size: 13px;
+    color: #1d3557;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 💡 LAMPU SIRKUS -->
+<div class="lights">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<div class="container">
+    <div class="profile">
+        <img src="foto 2/IMG_0054 (1).JPEG" alt="Profile">
+        <h1>IMFEST 2026</h1>
+        <p>WELCOME TO IMFEST 2026</p>
+    </div>
+
+    <div class="links">
+        <a href="https://www.instagram.com/imfest2026?igsh=N2MzOHd6cHA0Zjkx">🎭 Instagram</a>
+        <a href="https://drive.google.com/file/d/1LD7JFdsO1HY6sHiuAvJy_x7boL52xTe1/view?usp=sharing">🎪 Guide Book</a>
+        <a href="https://drive.google.com/file/d/1LmCIY7nY53BfcJ-tOC9aZzPUyaGO_W_a/view?usp=sharing">📁 Daftar Peserta</a>
+        <a href="https://maps.app.goo.gl/ZVTXCFVUHBrnzftp7">📍Lokasi</a>
+        <a href="https://wa.me/6285749562050">🎟️ WhatsApp 1</a>
+        <a href="https://wa.me/6281615920885">🎟️ WhatsApp 2</a>
+        <a href="https://www.tiktok.com/@imajinair_?_r=1&_t=ZS-93RVWBpQJwl">🎬 TikTok</a>
+        <a href="#">🤹 Dokumentasi</a>
+    </div>
+
+    <div class="footer">
+        Step Right Up! 
+    </div>
+</div>
+
+</body>
+</html>
